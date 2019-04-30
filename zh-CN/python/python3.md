@@ -66,14 +66,15 @@ scikit-learn基于`NumPy`,`SciPy`和 `matplotlib`构建，提供了大量简单�
 
 #### 实验1：安装scikit-learn工具
 
-1. 在命令行下使用pip工具安装scikit-learn工具，命令如下：
+1.在命令行下使用pip工具安装scikit-learn工具，命令如下：
 
 ``` bash
 pip install scikit-learn
 ```
 
-2. 等待pip联网下载并安装完成
-3. 检查安装是否成功。进入Python交互式环境, 输入下列Python代码, 如无异常且能够得到版本号则代表安装成功。
+2.等待pip联网下载并安装完成
+
+3.检查安装是否成功。进入Python交互式环境, 输入下列Python代码, 如无异常且能够得到版本号则代表安装成功。
 
 ``` python
 import sklearn
@@ -82,7 +83,7 @@ print(sklearn.__version__)
 
 #### 实验2：使用KNN算法进行鸢尾花分类
 
-1. 在notebook中执行如下代码，通过scikit-learn对鸢尾花进行分类预测
+1.在notebook中执行如下代码，通过scikit-learn对鸢尾花进行分类预测
 
 ``` python
 from sklearn.datasets import load_iris

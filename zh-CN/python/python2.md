@@ -126,14 +126,15 @@ plt.plot(x, y, marker="x")
 
 #### 实验1：安装Python数据科学工具包
 
-1. 在命令行下使用pip工具安装Numpy、Scipy、matplotlib、pandas等科学计算工具，命令如下：
+1.在命令行下使用pip工具安装Numpy、Scipy、matplotlib、pandas等科学计算工具，命令如下：
 
 ``` bash
 pip install numpy scipy matplotlib ipython pandas jupyter
 ```
 
-2. 等待pip联网下载并安装完成
-3. 检查安装是否成功。进入Python交互式环境,分别输入下列Python代码, 如无异常且能够得到版本号（版本号不需要完全一致）则代表安装成功。
+2.等待pip联网下载并安装完成
+
+3.检查安装是否成功。进入Python交互式环境,分别输入下列Python代码, 如无异常且能够得到版本号（版本号不需要完全一致）则代表安装成功。
 
 ``` python
 import pandas as pd
@@ -158,25 +159,25 @@ print(jupyter.__version__)
 
 #### 实验2：启动Jupyter Notebook环境
 
-1. 在命令行输入如下命令
+1.在命令行输入如下命令
 
 ``` bash
 jupyter notebook
 ```
 
-2. 命令执行成功后，浏览器会弹出jupyter notebook的web页面，如下图所示。
+2.命令执行成功后，浏览器会弹出jupyter notebook的web页面，如下图所示。
 
 ![](/docs/images/notebook1.png)
 
-3. 该页面显示了用户命令行所在目录下的所有文件，在页面右边可通过`new`按钮新建一个notebook，如下图所示。
+3.该页面显示了用户命令行所在目录下的所有文件，在页面右边可通过`new`按钮新建一个notebook，如下图所示。
 
 ![](/docs/images/notebook2.png)
 
-4. 新建成功以后会进入一个notebook页面，该页面是一个交互式的python环境，可在code区域输出Python代码。
+4.新建成功以后会进入一个notebook页面，该页面是一个交互式的python环境，可在code区域输出Python代码。
 
 ![](/docs/images/notebook3.png)
 
-5. 输入下列代码，并通过`shift + enter`执行，查看运行结果。
+5.输入下列代码，并通过`shift + enter`执行，查看运行结果。
 
 ``` python
 import numpy as np
@@ -186,7 +187,7 @@ print("x:\n{}".format(x))
 print("y:\n{}".format(y))
 ```
 
-6. 该notebook页面最终会作为一个文件保存，文件名默认为`Untitled.ipynb`,用户可以在网页左上位置修改文件名。
+6.该notebook页面最终会作为一个文件保存，文件名默认为`Untitled.ipynb`,用户可以在网页左上位置修改文件名。
 
 ![](/docs/images/notebook4.png)
 
@@ -194,13 +195,13 @@ print("y:\n{}".format(y))
 
 本实验建议在jupyter notebook环境下完成。
 
-1. 导入numpy
+1.导入numpy
 
 ``` python
 import numpy as np
 ```
 
-2. 创建数组和矩阵
+2.创建数组和矩阵
 
 ``` python
 a = np.array([0, 1, 2, 3])
@@ -209,7 +210,7 @@ b = np.array([[0, 1, 2], [3, 4, 5]])
 print(b)
 ```
 
-3. 在多数情况下，我们并不需要一个一个去输入数组元素，在notebook环境下执行下列代码
+3.在多数情况下，我们并不需要一个一个去输入数组元素，在notebook环境下执行下列代码
 
 ``` python
 # 生成 0..n-1 个连续数字
@@ -249,7 +250,7 @@ i = np.random.randn(4)
 print(i)  
 ```
 
-4. numpy数组支持索引方式访问，在notebook环境下执行下列代码
+4.numpy数组支持索引方式访问，在notebook环境下执行下列代码
 
 ``` python
 a = np.arange(10)
@@ -263,7 +264,7 @@ b = np.diag(np.arange(3))
 print(b[1,1])
 ```
 
-5. numpy数组还支持Python经典的切片操作，在notebook环境下执行下列代码
+5.numpy数组还支持Python经典的切片操作，在notebook环境下执行下列代码
 
 ``` python
 a = np.arange(10)
@@ -283,7 +284,7 @@ print(a[::2])
 print(a[3:])
 ```
 
-6. numpy支持大量的矩阵运算和统计，在notebook环境下执行下列代码
+6.numpy支持大量的矩阵运算和统计，在notebook环境下执行下列代码
 
 ``` python
 # 矩阵与常数的加法、乘法、乘方运算
@@ -325,7 +326,7 @@ print(y.T)
 
 #### 实验4：matplotlib基本使用
 
-1. 在notebook中执行下列代码，使用matplotlib画折线图
+1.在notebook中执行下列代码，使用matplotlib画折线图
 
 ``` python
 %matplotlib inline
@@ -339,7 +340,7 @@ plt.plot(x, y)
 
 ![](/docs/images/matplotlib1.png)
 
-2. 在notebook中执行下列代码，使用matplotlib画散点图
+2.在notebook中执行下列代码，使用matplotlib画散点图
 
 ``` python
 %matplotlib inline
@@ -353,7 +354,7 @@ plt.plot(x, y, 'o')
 
 ![](/docs/images/matplotlib2.png)
 
-3. 在notebook中执行下列代码，使用matplotlib画正余弦曲线
+3.在notebook中执行下列代码，使用matplotlib画正余弦曲线
 
 ``` python
 import numpy as np
