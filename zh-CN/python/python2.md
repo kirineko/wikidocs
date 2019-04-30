@@ -85,7 +85,7 @@ print("y:\n{}".format(y))
 ```
 
 x用于表示向量，y用于表示矩阵，输出结果如下：
-![](/docs/img/numpy1.png)
+![](/docs/images/numpy1.png)
 
 numpy所创建的数组都是ndarray对象，ndarray具有如下比较重要的属性：
 
@@ -118,7 +118,7 @@ y = np.sin(x)
 # plot函数绘制一个数组关于另一个数组的折线图
 plt.plot(x, y, marker="x")
 ```
-![](/docs/img/numpy2.png)
+![](/docs/images/numpy2.png)
 
 使用plt内置的plot()方法只要给定了x轴和y轴的数据就可以轻而易举的对其进行可视化。matplotlib在Python数据可视化中有十分重要的作用。
 
@@ -154,7 +154,7 @@ print(IPython.__version__)
 import jupyter
 print(jupyter.__version__)
 ```
-![](./img/numpy3.png)
+![](/docs/images/numpy3.png)
 
 #### 实验2：启动Jupyter Notebook环境
 
@@ -166,15 +166,15 @@ jupyter notebook
 
 2. 命令执行成功后，浏览器会弹出jupyter notebook的web页面，如下图所示。
 
-![](/docs/img/notebook1.png)
+![](/docs/images/notebook1.png)
 
 3. 该页面显示了用户命令行所在目录下的所有文件，在页面右边可通过`new`按钮新建一个notebook，如下图所示。
 
-![](/docs/img/notebook2.png)
+![](/docs/images/notebook2.png)
 
 4. 新建成功以后会进入一个notebook页面，该页面是一个交互式的python环境，可在code区域输出Python代码。
 
-![](/docs/img/notebook3.png)
+![](/docs/images/notebook3.png)
 
 5. 输入下列代码，并通过`shift + enter`执行，查看运行结果。
 
@@ -188,7 +188,7 @@ print("y:\n{}".format(y))
 
 6. 该notebook页面最终会作为一个文件保存，文件名默认为`Untitled.ipynb`,用户可以在网页左上位置修改文件名。
 
-![](/docs/img/notebook4.png)
+![](/docs/images/notebook4.png)
 
 #### 实验3：Numpy基本使用
 
@@ -337,7 +337,7 @@ plt.plot(x, y)
 
 结果如下图：
 
-![](/docs/img/matplotlib1.png)
+![](/docs/images/matplotlib1.png)
 
 2. 在notebook中执行下列代码，使用matplotlib画散点图
 
@@ -351,7 +351,7 @@ plt.plot(x, y, 'o')
 
 结果如下图：
 
-![](/docs/img/matplotlib2.png)
+![](/docs/images/matplotlib2.png)
 
 3. 在notebook中执行下列代码，使用matplotlib画正余弦曲线
 
@@ -370,4 +370,4 @@ plt.show()
 
 结果如下图：
 
-![](/docs/img/matplotlib3.png)
+![](/docs/images/matplotlib3.png)

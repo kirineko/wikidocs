@@ -89,23 +89,23 @@ pip help
 
 2. 在官网进入Download页面
 
-![](/docs/img/py-setup1-win.png)
+![](/docs/images/py-setup1-win.png)
 
 3. 在下载页面下载当前最新稳定版, 64位windows可选择`Windows x86-64 executable installer`, 32位windows可选择`Windows x86 executable installer`
 
-![](/docs/img/py-setup1-win2.png)
+![](/docs/images/py-setup1-win2.png)
 
 4. 运行Python安装包，按照安装向导进行安装即可。建议选择自定义安装方式，在安装过程中勾选`Add Python 3.7 to PATH`选项，把Python加入到环境变量中
 
-![](/docs/img/py-install1.png)
+![](/docs/images/py-install1.png)
 
-![](/docs/img/py-install2.png)
+![](/docs/images/py-install2.png)
 
-![](/docs/img/py-install3.png)
+![](/docs/images/py-install3.png)
 
 5. 安装完成以后进入`命令提示符`，在命令行中输入`python -V`,如果成功显示出Python版本，则安装成功
 
-![](/docs/img/py-install4.png)
+![](/docs/images/py-install4.png)
 
 #### 实验2：通过包管理工具安装numpy
 
@@ -115,7 +115,7 @@ pip help
 pip --version
 ```
 
-![](/docs/img/pip-check.png)
+![](/docs/images/pip-check.png)
 
 2. 通过pip下载numpy(需要连接互联网)
 
@@ -152,7 +152,7 @@ Python是一种动态强类型语言，Python代码是由Python解释器解释�
 
 在命令行中输入`python`命令，就进入了Python交互模式。如下图所示。
 
-![](/docs/img/py-run1.png)
+![](/docs/images/py-run1.png)
 
 在交互模式下用户每输入一行Python语句，Python解释器会对该语句进行解释执行，如遇输出语句则打印输出结果。这种模式看上去就像是用户和Python解释器在进行对话一样，因此被称为**交互模式**
 
@@ -164,7 +164,7 @@ print(a)
 print('hello world')
 ```
 
-![](/docs/img/py-run2.png)
+![](/docs/images/py-run2.png)
 
 在Python交互式命令行下，可以直接输入代码，然后执行，并立刻得到结果。这对于语言学习和快速验证想法都是非常有帮助的。
 

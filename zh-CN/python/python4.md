@@ -12,7 +12,7 @@ name: Python综合案例
 
 根据已有数据预测房屋价格。已有数据如下图所示（只显示前几条数据），通过house_price.csv文件提供：
 
-![](/docs/img/anli1.png)
+![](/docs/images/anli1.png)
 
 每一行都代表一条房屋数据，如LSTAT代表房屋所在地区人口百分比, AGE代表房屋年限, DIS代表房屋与市中心的距离, CRIM代表房屋所在地区犯罪率，MEDV代表房价, TAX代表税, RM代表房屋的平均房间数。
 
@@ -57,7 +57,7 @@ df.head()
 
 read_csv()方法会把数据读取到Pandas的DataFrame对象中，通过df.head()方法可以查看数据的前5行。
 
-![](/docs/img/anli2.png)
+![](/docs/images/anli2.png)
 
 
 ### 4. 数据可视化
@@ -85,7 +85,7 @@ sns.pairplot(df[cols],height=2)
 plt.show()
 ```
 
-![](/docs/img/anli3.png)
+![](/docs/images/anli3.png)
 
 注意观察图中第5行，展示了MEDV(房价)和其它特征的关系，其中通过第5行第1列可以看出MEDV(房价)和LSTAT(人口百分比)呈负相关，通过第5行第7列可以看出MEDV(房价)和RM(平均房间数)呈正相关。
 
@@ -126,7 +126,7 @@ def Regression_plot(X, y, model):
     return None
 ```
 
-![](/docs/img/anli4.png)
+![](/docs/images/anli4.png)
 
 图中红线即为训练出来的线性回归模型，更加直观地反映出MEDV(房价)和LSTAT(人口百分比)呈负相关。
 
@@ -188,7 +188,7 @@ plt.xlim([-10,50])
 plt.show()
 ```
 
-![](/docs/img/anli5.png)
+![](/docs/images/anli5.png)
 
 从上图可以看出，大部分点的误差都在0左右，这说明我们建立的线性回归模型在训练集和测试集上的拟合性都比较好，具有一定的有效性。
 
