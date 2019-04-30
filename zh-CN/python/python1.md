@@ -85,17 +85,17 @@ pip help
 
 #### 实验1：下载和安装Python
 
-1. 访问Python官网: https://www.python.org/
+1.访问Python官网: https://www.python.org/
 
-2. 在官网进入Download页面
+2.在官网进入Download页面
 
 ![](/docs/images/py-setup1-win.png)
 
-3. 在下载页面下载当前最新稳定版, 64位windows可选择`Windows x86-64 executable installer`, 32位windows可选择`Windows x86 executable installer`
+3.在下载页面下载当前最新稳定版, 64位windows可选择`Windows x86-64 executable installer`, 32位windows可选择`Windows x86 executable installer`
 
 ![](/docs/images/py-setup1-win2.png)
 
-4. 运行Python安装包，按照安装向导进行安装即可。建议选择自定义安装方式，在安装过程中勾选`Add Python 3.7 to PATH`选项，把Python加入到环境变量中
+4.运行Python安装包，按照安装向导进行安装即可。建议选择自定义安装方式，在安装过程中勾选`Add Python 3.7 to PATH`选项，把Python加入到环境变量中
 
 ![](/docs/images/py-install1.png)
 
@@ -103,13 +103,13 @@ pip help
 
 ![](/docs/images/py-install3.png)
 
-5. 安装完成以后进入`命令提示符`，在命令行中输入`python -V`,如果成功显示出Python版本，则安装成功
+5.安装完成以后进入`命令提示符`，在命令行中输入`python -V`,如果成功显示出Python版本，则安装成功
 
 ![](/docs/images/py-install4.png)
 
 #### 实验2：通过包管理工具安装numpy
 
-1. 检查pip版本
+1.检查pip版本
 
 ``` bash
 pip --version
@@ -117,13 +117,13 @@ pip --version
 
 ![](/docs/images/pip-check.png)
 
-2. 通过pip下载numpy(需要连接互联网)
+2.通过pip下载numpy(需要连接互联网)
 
 ``` bash
 pip install numpy
 ```
 
-3. 检查numpy是否已经安装
+3.检查numpy是否已经安装
 
 如需检查numpy是否已经安装成功，可以通过python命令进入交互模式，在交互模式下输入`import numpy`,如果没有提示异常则说明numpy已经安装成功。 
 
@@ -134,7 +134,7 @@ python
 > import numpy
 ```
 
-4. 通过pip卸载numpy
+4.通过pip卸载numpy
 
 ``` bash
 pip uninstall numpy
@@ -148,7 +148,7 @@ pip uninstall numpy
 
 Python是一种动态强类型语言，Python代码是由Python解释器解释执行的，这是Python和编译型语言如C语言、Java语言的显著区别。由于Python代码可以由Python解释器边解释边执行，Python程序大致可分为交互式和脚本式两种运行方式。
 
-**1. 交互式运行方式**
+##### **1. 交互式运行方式**
 
 在命令行中输入`python`命令，就进入了Python交互模式。如下图所示。
 
@@ -168,7 +168,7 @@ print('hello world')
 
 在Python交互式命令行下，可以直接输入代码，然后执行，并立刻得到结果。这对于语言学习和快速验证想法都是非常有帮助的。
 
-**2. 脚本式运行方式**
+##### **2. 脚本式运行方式**
 
 在Python的交互式命令行写程序虽然可以直接得到结果，但问题在于代码没法保存，下次如果还想运行相同代码就还需要重新输入。所以，开发过程中往往不会使用交互方式，而是把代码保存在文件当中，这样，程序就可以反复运行了。这种运行方式就是**脚本运行方式**。
 
@@ -187,15 +187,15 @@ print('hello world')
 
 掌握Python语法是书写Python程序的基础。为了更直观地说明Python语法，本部分结合一个实例程序对Python语法进行说明。
 
-**问题**
+##### **问题**
 
 找出1-100中既能被4也能被6整除的所有数，并输出。
 
-**问题分析**
+##### **问题分析**
 
 对于上述问题可以首先编写一个函数用于判断一个数能否既被4整除也被6整除，如果能则函数返回`True`, 否则函数返回`False`; 然后编写一个循环从1到100进行遍历，对于遍历到的每个数字，将其作为参数传入上述函数，如果函数返回`True`，则表明该数字符合条件，将其加入到结果列表中；循环结束后，将结果列表打印输出就得到了问题的答案。
 
-**代码**
+##### **代码**
 
 根据上述思路编写的Python代码如下：
 
@@ -216,9 +216,9 @@ for i in range(1, 101):
 print(result)
 ```
 
-**代码分析**
+##### **代码分析**
 
-#### 1.Python程序的格式框架
+##### 1.Python程序的格式框架
 
 Python程序使用缩进来表示语法层级，这是Python语言非常独特的格式框架，缩进是语法的一部分，缩进不正确程序会运行错误。在Python中，缩进是表达代码间包含和层次关系的唯一手段，通过缩进可以清晰地看出代码块之间的所属关系。
 
@@ -232,7 +232,7 @@ for i in range(1, 101):
 
 使用Python编程需要格外注意缩进，尤其对于初学者而言，很多程序运行错误都是由缩进错误引发的。
 
-#### 2.数据类型
+##### 2.数据类型
 
 Python可以直接处理的基本数据类型包括以下几类：
 
@@ -251,7 +251,7 @@ Python可以直接处理的基本数据类型包括以下几类：
 
 此外Python还支持自定义数据类型。
 
-#### 3. 变量定义
+##### 3. 变量定义
 
 Python是动态强类型语言，变量无需事先声明类型，且变量类型可以动态变化。如下列代码：
 
@@ -264,7 +264,7 @@ print(a)
 
 首先定义了一个变量a，并把整数123赋值给a，然后打印输出。接着又把字符串'hello world'赋值给a，然后打印输出。上述代码中，无论是整数还是字符串，变量a都可以保存，变量a的类型不是固定不变的。这充分反映了Python作为动态语言的灵活性。
 
-#### 4. 控制结构
+##### 4. 控制结构
 
 Python支持分支结构和循环结构。
 
@@ -296,7 +296,7 @@ for i in range(1, 101):
         result.append(i)
 ```
 
-#### 5. 函数
+##### 5. 函数
 
 在Python中，定义一个函数要使用def语句，依次写出函数名、括号、括号中的参数和冒号:，然后，在缩进块中编写函数体，函数的返回值用return语句返回。
 
@@ -312,7 +312,7 @@ def can_divide(num):
 
 作为动态语言，Python函数中的参数和返回值均不限定类型，这就使Python中的函数十分灵活和强大。
 
-#### 6. 输入输出语句
+##### 6. 输入输出语句
 
 Python中的输入输出主要使用`input()`函数和`print()`函数。
 
