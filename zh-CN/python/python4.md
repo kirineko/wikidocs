@@ -1,5 +1,5 @@
 ---
-name: Python综合案例
+name: Python综合案例1
 ---
 
 ## Python数据分析综合案例

@@ -10,8 +10,10 @@ name: 大数据分析——Python
 
 [1. Python编程基础](http://wiki.yukoneko.cc/docs/python/python1)
 
-[2. Python数据分析](http://wiki.yukoneko.cc/docs/python/python1)
+[2. Python数据分析](http://wiki.yukoneko.cc/docs/python/python2)
 
-[3. Python机器学习](http://wiki.yukoneko.cc/docs/python/python1)
+[3. Python机器学习](http://wiki.yukoneko.cc/docs/python/python3)
 
-[4. Python综合案例](http://wiki.yukoneko.cc/docs/python/python1)
+[4. Python综合案例1](http://wiki.yukoneko.cc/docs/python/python4)
+
+[5. Python综合案例2](http://wiki.yukoneko.cc/docs/python/python5)
